@@ -53,5 +53,9 @@ cat /etc/passwd | cut -d ":" -f 1
 y=$(($(date +%Y)+1))
 echo $y
 
+# 根据系统时间计算 今年还剩多少周/过去了多少周  
+#10#是用来转为10进制,防止082,识别为8进制数字
 
-echo $((20+30))
+echo "this year has passed $((10#$(date +%j))) days"
+echo "this year has passed $((10#$(date +%j)/7)) weeks"
+echo "there is $(((365-10#$(date +%j))/7)) weeks left"

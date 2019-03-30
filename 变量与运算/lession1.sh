@@ -1,4 +1,4 @@
-#! bin/bash 
+#!/bin/bash 
 
 string="Bigdata process framework is Hadoop,Hadoop is an open source project"
 #执行脚本后,打印这段话,并根据用户输入执行以下功能
